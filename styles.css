@@ -1,0 +1,45 @@
+#container {
+  width: 700px;
+  height: 450px;
+  margin: 70px auto;
+  border: 2px solid forestgreen;
+}
+
+h1 {
+  text-align: center;
+  color: forestgreen;
+}
+
+#projects {
+  width: 650px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+ol li {
+  border: 1px dotted black;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+ol li :hover {
+  background-color: aqua;
+}
+
+#btnAddProject {
+  margin-left: 550px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+#btnAddTask {
+  margin-left: 550px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+#project-dialog,
+#task-dialog {
+  display: none;
+}
