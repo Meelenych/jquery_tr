@@ -10,6 +10,13 @@ $(document).ready(function () {
 				$(this).remove();
 			});
 	});
+	$('#projects').on('click', 'span.ui-icon-delete', function () {
+		var index = $(this).closest('li').index();
+		var id = $('#main li').eq(index).find('a').attr('href');
+		$('#main li').eq(index).remove();
+		$(id).remove();
+		$('#projects').tabs('refresh');
+	});
 	$('#btnAddTask')
 		.button()
 		.click(function () {
@@ -49,7 +56,11 @@ $(document).ready(function () {
 						var projectName = $('#new-project').val();
 						var replaceName = projectName.split(' ').join('_');
 						$(
-							"<li><a href='#" + replaceName + "'>" + replaceName + '</a></li>',
+							"<li><a href='#" +
+								replaceName +
+								"'>" +
+								replaceName +
+								"</a><span class='ui-icon ui-icon-delete'></span></li>",
 						).appendTo('#main');
 						$("<ol id='" + replaceName + "'></ol>")
 							.appendTo('#projects')

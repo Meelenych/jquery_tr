@@ -43,3 +43,10 @@ ol li :hover {
 #task-dialog {
   display: none;
 }
+
+.ui-icon-delete {
+  transform: scale(1.5);
+  fill: black;
+  stroke: black;
+  cursor: pointer;
+}
