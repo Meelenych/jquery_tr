@@ -1,7 +1,11 @@
 {
-  "dependencies": {
-    "jquery": "^3.7.1",
-    "jquery-ui": "^1.13.2",
-    "jquery-ui-css": "^1.11.5"
-  }
+	"name": "jquery_todo_list",
+	"version": "1.0.0",
+	"description": "ToDo list based on JQuery",
+	"main": "index.js",
+	"dependencies": {
+		"jquery": "^3.7.1",
+		"jquery-ui": "^1.13.2",
+		"jquery-ui-css": "^1.11.5"
+	}
 }

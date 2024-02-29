@@ -1,3 +1,7 @@
+// import $ from 'jquery';
+// import 'jquery-ui';
+// import 'jquery-ui-css';
+
 $(document).ready(function () {
 	$('input[type=checkbox]').removeAttr('checked');
 	$('#projects').tabs();
